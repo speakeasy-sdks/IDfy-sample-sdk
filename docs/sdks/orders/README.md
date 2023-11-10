@@ -23,7 +23,6 @@ import(
 	"log"
 	templatespeakeasybar "github.com/speakeasy-sdks/template-speakeasy-bar"
 	"github.com/speakeasy-sdks/template-speakeasy-bar/pkg/models/shared"
-	"github.com/speakeasy-sdks/template-speakeasy-bar/pkg/models/callbacks"
 )
 
 func main() {
@@ -56,14 +55,17 @@ func main() {
 
 ### Parameters
 
-| Parameter                                                | Type                                                     | Required                                                 | Description                                              |
-| -------------------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------- |
-| `ctx`                                                    | [context.Context](https://pkg.go.dev/context#Context)    | :heavy_check_mark:                                       | The context to use for the request.                      |
-| `requestBody`                                            | [][shared.OrderInput](../../models/shared/orderinput.md) | :heavy_check_mark:                                       | N/A                                                      |
-| `callbackURL`                                            | **string*                                                | :heavy_minus_sign:                                       | The url to call when the order is updated.               |
+| Parameter                                                       | Type                                                            | Required                                                        | Description                                                     |
+| --------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------- |
+| `ctx`                                                           | [context.Context](https://pkg.go.dev/context#Context)           | :heavy_check_mark:                                              | The context to use for the request.                             |
+| `requestBody`                                                   | [][shared.OrderInput](../../../pkg/models/shared/orderinput.md) | :heavy_check_mark:                                              | N/A                                                             |
+| `callbackURL`                                                   | **string*                                                       | :heavy_minus_sign:                                              | The url to call when the order is updated.                      |
 
 
 ### Response
 
-**[*operations.CreateOrderResponse](../../models/operations/createorderresponse.md), error**
-
+**[*operations.CreateOrderResponse](../../pkg/models/operations/createorderresponse.md), error**
+| Error Object       | Status Code        | Content Type       |
+| ------------------ | ------------------ | ------------------ |
+| sdkerrors.APIError | 5XX                | application/json   |
+| sdkerrors.SDKError | 400-600            | */*                |
