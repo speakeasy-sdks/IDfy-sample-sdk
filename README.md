@@ -147,8 +147,10 @@ package main
 
 import (
 	"context"
+	"errors"
 	templatespeakeasybar "github.com/speakeasy-sdks/template-speakeasy-bar"
 	"github.com/speakeasy-sdks/template-speakeasy-bar/pkg/models/operations"
+	"github.com/speakeasy-sdks/template-speakeasy-bar/pkg/models/sdkerrors"
 	"github.com/speakeasy-sdks/template-speakeasy-bar/pkg/models/shared"
 	"log"
 )
@@ -299,7 +301,6 @@ This can be a convenient way to configure timeouts, cookies, proxies, custom hea
 
 
 <!-- Start Authentication -->
-
 ## Authentication
 
 ### Per-Client Security Schemes
@@ -318,7 +319,6 @@ import (
 	"context"
 	templatespeakeasybar "github.com/speakeasy-sdks/template-speakeasy-bar"
 	"github.com/speakeasy-sdks/template-speakeasy-bar/pkg/models/operations"
-	"github.com/speakeasy-sdks/template-speakeasy-bar/pkg/models/shared"
 	"log"
 )
 

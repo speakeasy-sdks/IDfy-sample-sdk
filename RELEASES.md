@@ -69,3 +69,13 @@ Based on:
 - [go v0.7.0] .
 ### Releases
 - [Go v0.7.0] https://github.com/speakeasy-sdks/IDfy-sample-sdk/releases/tag/v0.7.0 - .
+
+## 2023-11-16 00:38:56
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.120.3 (2.192.1) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.7.1] .
+### Releases
+- [Go v0.7.1] https://github.com/speakeasy-sdks/IDfy-sample-sdk/releases/tag/v0.7.1 - .
