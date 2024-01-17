@@ -4,16 +4,16 @@ management:
   docChecksum: abbc3a8faac54f76013e5d509a8d11ec
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.225.2
-  releaseVersion: 0.9.0
-  configChecksum: 6d41195ee0d15d84b60509c2b0b318c2
+  generationVersion: 2.234.3
+  releaseVersion: 0.9.1
+  configChecksum: 2603cde92e25daeeff959625e3917668
   repoURL: https://github.com/speakeasy-sdks/IDfy-sample-sdk.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/IDfy-sample-sdk
   published: true
 features:
   go:
-    core: 3.3.0
+    core: 3.3.1
     devContainers: 2.90.0
     errors: 2.81.8
     examples: 2.81.3
