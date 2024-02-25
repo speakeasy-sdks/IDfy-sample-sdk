@@ -30,7 +30,11 @@ func newDrinks(sdkConfig sdkConfiguration) *Drinks {
 // GetDrink - Get a drink.
 // Get a drink by name, if authenticated this will include stock levels and product codes otherwise it will only include public information.
 func (s *Drinks) GetDrink(ctx context.Context, name string) (*operations.GetDrinkResponse, error) {
-	hookCtx := hooks.HookContext{OperationID: "getDrink"}
+	hookCtx := hooks.HookContext{
+		Context:        ctx,
+		OperationID:    "getDrink",
+		SecuritySource: s.sdkConfiguration.Security,
+	}
 
 	request := operations.GetDrinkRequest{
 		Name: name,
@@ -49,12 +53,12 @@ func (s *Drinks) GetDrink(ctx context.Context, name string) (*operations.GetDrin
 	req.Header.Set("Accept", "application/json")
 	req.Header.Set("User-Agent", s.sdkConfiguration.UserAgent)
 
-	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
+	client := s.sdkConfiguration.SecurityClient
+
+	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{HookContext: hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
-
-	client := s.sdkConfiguration.SecurityClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -64,15 +68,15 @@ func (s *Drinks) GetDrink(ctx context.Context, name string) (*operations.GetDrin
 			err = fmt.Errorf("error sending request: no response")
 		}
 
-		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, nil, err)
+		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, nil, err)
 		return nil, err
 	} else if utils.MatchStatusCodes([]string{"4XX", "5XX"}, httpRes.StatusCode) {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, httpRes, nil)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, httpRes, nil)
 		if err != nil {
 			return nil, err
 		}
 	} else {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{hookCtx}, httpRes)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{HookContext: hookCtx}, httpRes)
 		if err != nil {
 			return nil, err
 		}
@@ -138,7 +142,11 @@ func (s *Drinks) GetDrink(ctx context.Context, name string) (*operations.GetDrin
 // ListDrinks - Get a list of drinks.
 // Get a list of drinks, if authenticated this will include stock levels and product codes otherwise it will only include public information.
 func (s *Drinks) ListDrinks(ctx context.Context, drinkType *shared.DrinkType) (*operations.ListDrinksResponse, error) {
-	hookCtx := hooks.HookContext{OperationID: "listDrinks"}
+	hookCtx := hooks.HookContext{
+		Context:        ctx,
+		OperationID:    "listDrinks",
+		SecuritySource: s.sdkConfiguration.Security,
+	}
 
 	request := operations.ListDrinksRequest{
 		DrinkType: drinkType,
@@ -161,12 +169,12 @@ func (s *Drinks) ListDrinks(ctx context.Context, drinkType *shared.DrinkType) (*
 		return nil, fmt.Errorf("error populating query params: %w", err)
 	}
 
-	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{hookCtx}, req)
+	client := s.sdkConfiguration.SecurityClient
+
+	req, err = s.sdkConfiguration.Hooks.BeforeRequest(hooks.BeforeRequestContext{HookContext: hookCtx}, req)
 	if err != nil {
 		return nil, err
 	}
-
-	client := s.sdkConfiguration.DefaultClient
 
 	httpRes, err := client.Do(req)
 	if err != nil || httpRes == nil {
@@ -176,15 +184,15 @@ func (s *Drinks) ListDrinks(ctx context.Context, drinkType *shared.DrinkType) (*
 			err = fmt.Errorf("error sending request: no response")
 		}
 
-		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, nil, err)
+		_, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, nil, err)
 		return nil, err
 	} else if utils.MatchStatusCodes([]string{"4XX", "5XX"}, httpRes.StatusCode) {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{hookCtx}, httpRes, nil)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterError(hooks.AfterErrorContext{HookContext: hookCtx}, httpRes, nil)
 		if err != nil {
 			return nil, err
 		}
 	} else {
-		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{hookCtx}, httpRes)
+		httpRes, err = s.sdkConfiguration.Hooks.AfterSuccess(hooks.AfterSuccessContext{HookContext: hookCtx}, httpRes)
 		if err != nil {
 			return nil, err
 		}

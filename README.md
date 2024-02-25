@@ -73,7 +73,9 @@ import (
 )
 
 func main() {
-	s := templatespeakeasybar.New()
+	s := templatespeakeasybar.New(
+		templatespeakeasybar.WithSecurity("<YOUR_API_KEY_HERE>"),
+	)
 
 	var drinkType *shared.DrinkType = shared.DrinkTypeSpirit.ToPointer()
 
@@ -137,14 +139,11 @@ import (
 	templatespeakeasybar "github.com/speakeasy-sdks/template-speakeasy-bar"
 	"github.com/speakeasy-sdks/template-speakeasy-bar/pkg/models/operations"
 	"github.com/speakeasy-sdks/template-speakeasy-bar/pkg/models/sdkerrors"
-	"github.com/speakeasy-sdks/template-speakeasy-bar/pkg/models/shared"
 	"log"
 )
 
 func main() {
-	s := templatespeakeasybar.New(
-		templatespeakeasybar.WithSecurity("<YOUR_API_KEY_HERE>"),
-	)
+	s := templatespeakeasybar.New()
 
 	ctx := context.Background()
 	res, err := s.Authentication.Authenticate(ctx, operations.AuthenticateRequestBody{})
@@ -189,14 +188,12 @@ import (
 	"context"
 	templatespeakeasybar "github.com/speakeasy-sdks/template-speakeasy-bar"
 	"github.com/speakeasy-sdks/template-speakeasy-bar/pkg/models/operations"
-	"github.com/speakeasy-sdks/template-speakeasy-bar/pkg/models/shared"
 	"log"
 )
 
 func main() {
 	s := templatespeakeasybar.New(
 		templatespeakeasybar.WithServer("customer"),
-		templatespeakeasybar.WithSecurity("<YOUR_API_KEY_HERE>"),
 	)
 
 	ctx := context.Background()
@@ -228,14 +225,12 @@ import (
 	"context"
 	templatespeakeasybar "github.com/speakeasy-sdks/template-speakeasy-bar"
 	"github.com/speakeasy-sdks/template-speakeasy-bar/pkg/models/operations"
-	"github.com/speakeasy-sdks/template-speakeasy-bar/pkg/models/shared"
 	"log"
 )
 
 func main() {
 	s := templatespeakeasybar.New(
 		templatespeakeasybar.WithServerURL("https://speakeasy.bar"),
-		templatespeakeasybar.WithSecurity("<YOUR_API_KEY_HERE>"),
 	)
 
 	ctx := context.Background()
