@@ -4,9 +4,9 @@ management:
   docChecksum: abbc3a8faac54f76013e5d509a8d11ec
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.272.4
-  releaseVersion: 0.12.0
-  configChecksum: 9e7beec81d94f4844ca3a6af0b05736e
+  generationVersion: 2.272.7
+  releaseVersion: 0.12.1
+  configChecksum: d43a0720d4e8cf3eec813f0311036946
   repoURL: https://github.com/speakeasy-sdks/IDfy-sample-sdk.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/IDfy-sample-sdk
@@ -18,7 +18,7 @@ features:
     errors: 2.81.8
     examples: 2.81.3
     flattening: 2.81.1
-    globalSecurity: 2.82.7
+    globalSecurity: 2.82.8
     globalServerURLs: 2.82.1
     inputOutputModels: 2.83.0
     serverIDs: 2.81.1
