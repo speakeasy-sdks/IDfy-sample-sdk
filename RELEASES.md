@@ -59,3 +59,203 @@ Based on:
 - [go v0.6.0] .
 ### Releases
 - [Go v0.6.0] https://github.com/speakeasy-sdks/template-speakeasy-bar/releases/tag/v0.6.0 - .
+
+## 2023-11-10 00:36:43
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.118.3 (2.187.7) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.7.0] .
+### Releases
+- [Go v0.7.0] https://github.com/speakeasy-sdks/IDfy-sample-sdk/releases/tag/v0.7.0 - .
+
+## 2023-11-16 00:38:56
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.120.3 (2.192.1) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.7.1] .
+### Releases
+- [Go v0.7.1] https://github.com/speakeasy-sdks/IDfy-sample-sdk/releases/tag/v0.7.1 - .
+
+## 2023-11-22 00:40:08
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.121.3 (2.195.2) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.7.2] .
+### Releases
+- [Go v0.7.2] https://github.com/speakeasy-sdks/IDfy-sample-sdk/releases/tag/v0.7.2 - .
+
+## 2023-12-12 00:42:57
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.126.0 (2.213.3) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.8.0] .
+### Releases
+- [Go v0.8.0] https://github.com/speakeasy-sdks/IDfy-sample-sdk/releases/tag/v0.8.0 - .
+
+## 2023-12-19 00:16:07
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.127.0 (2.220.0) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.9.0] .
+### Releases
+- [Go v0.9.0] https://github.com/speakeasy-sdks/IDfy-sample-sdk/releases/tag/v0.9.0 - .
+
+## 2024-01-05 00:17:57
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.130.1 (2.225.2) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.9.0] .
+### Releases
+- [Go v0.9.0] https://github.com/speakeasy-sdks/IDfy-sample-sdk/releases/tag/v0.9.0 - .
+
+## 2024-01-17 00:42:40
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.142.1 (2.234.3) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.9.1] .
+### Releases
+- [Go v0.9.1] https://github.com/speakeasy-sdks/IDfy-sample-sdk/releases/tag/v0.9.1 - .
+
+## 2024-01-19 00:44:33
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.147.0 (2.237.2) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.9.2] .
+### Releases
+- [Go v0.9.2] https://github.com/speakeasy-sdks/IDfy-sample-sdk/releases/tag/v0.9.2 - .
+
+## 2024-02-01 00:20:34
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.161.0 (2.245.1) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.9.3] .
+### Releases
+- [Go v0.9.3] https://github.com/speakeasy-sdks/IDfy-sample-sdk/releases/tag/v0.9.3 - .
+
+## 2024-02-06 00:19:17
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.167.3 (2.250.2) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.10.0] .
+### Releases
+- [Go v0.10.0] https://github.com/speakeasy-sdks/IDfy-sample-sdk/releases/tag/v0.10.0 - .
+
+## 2024-02-13 00:20:46
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.178.0 (2.253.0) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.10.1] .
+### Releases
+- [Go v0.10.1] https://github.com/speakeasy-sdks/IDfy-sample-sdk/releases/tag/v0.10.1 - .
+
+## 2024-02-15 00:21:00
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.180.0 (2.258.0) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.11.0] .
+### Releases
+- [Go v0.11.0] https://github.com/speakeasy-sdks/IDfy-sample-sdk/releases/tag/v0.11.0 - .
+
+## 2024-02-20 00:17:07
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.183.3 (2.263.3) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.11.1] .
+### Releases
+- [Go v0.11.1] https://github.com/speakeasy-sdks/IDfy-sample-sdk/releases/tag/v0.11.1 - .
+
+## 2024-02-25 00:16:16
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.193.4 (2.272.4) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.12.0] .
+### Releases
+- [Go v0.12.0] https://github.com/speakeasy-sdks/IDfy-sample-sdk/releases/tag/v0.12.0 - .
+
+## 2024-02-27 00:21:06
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.194.0 (2.272.7) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.12.1] .
+### Releases
+- [Go v0.12.1] https://github.com/speakeasy-sdks/IDfy-sample-sdk/releases/tag/v0.12.1 - .
+
+## 2024-02-29 21:35:19
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.198.0 (2.275.2) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.13.0] .
+### Releases
+- [Go v0.13.0] https://github.com/speakeasy-sdks/IDfy-sample-sdk/releases/tag/v0.13.0 - .
+
+## 2024-03-08 00:22:26
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.204.1 (2.279.1) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.14.0] .
+### Releases
+- [Go v0.14.0] https://github.com/speakeasy-sdks/IDfy-sample-sdk/releases/tag/v0.14.0 - .
+
+## 2024-03-13 00:26:58
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.207.1 (2.280.6) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.14.1] .
+### Releases
+- [Go v0.14.1] https://github.com/speakeasy-sdks/IDfy-sample-sdk/releases/tag/v0.14.1 - .
+
+## 2024-03-20 00:36:30
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.213.0 (2.283.1) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.14.2] .
+### Releases
+- [Go v0.14.2] https://github.com/speakeasy-sdks/IDfy-sample-sdk/releases/tag/v0.14.2 - .
+
+## 2024-03-27 00:44:54
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.227.0 (2.291.0) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v0.14.3] .
+### Releases
+- [Go v0.14.3] https://github.com/speakeasy-sdks/IDfy-sample-sdk/releases/tag/v0.14.3 - .
